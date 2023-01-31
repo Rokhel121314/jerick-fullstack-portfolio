@@ -1,12 +1,51 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import style from "../css/style.css";
 import profilepicture from "../assets/profilejpeg.jpg";
 import { Link } from "react-router-dom";
+import { CgMenu } from "react-icons/cg";
+import { CgClose } from "react-icons/cg";
+import { TbPlayerTrackNext } from "react-icons/tb";
 
 function Navigation() {
+  const [toggle, setToggle] = useState(false);
+  const [width, setWidth] = useState(0);
+  // console.log("toggle", toggle);
+  // console.log("widht", width);
+
+  function screenWidth() {
+    setWidth(window.innerWidth);
+  }
+
+  function displayNav() {
+    if (toggle === false) {
+      setToggle(true);
+    } else {
+      setToggle(false);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("resize", screenWidth);
+    if (width > 600) {
+      setToggle(false);
+    } else {
+      setToggle(true);
+    }
+    return () => {
+      window.removeEventListener("resize", screenWidth);
+    };
+  }, [width]);
+
   return (
     <>
-      <nav className="navigation col-2">
+      <button className="navToggle" onClick={displayNav}>
+        {toggle ? (
+          <CgMenu className="toggleIcon" />
+        ) : (
+          <CgClose className="toggleIcon" />
+        )}
+      </button>
+      <nav className={toggle ? "navigationHide" : "navigationDisplay"}>
         <div className="profileContainer">
           <img
             src={profilepicture}
@@ -38,6 +77,10 @@ function Navigation() {
           </p>
         </footer>
       </nav>
+
+      <Link to={"/about"} className="nextBtn">
+        <TbPlayerTrackNext className="toggleIcon" />
+      </Link>
     </>
   );
 }

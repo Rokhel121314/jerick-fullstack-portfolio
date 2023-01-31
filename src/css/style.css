@@ -48,8 +48,9 @@ body {
 }
 
 /* NAVIGATION  */
-.navigation {
+.navigationDisplay {
   height: 100vh;
+  width: 16.66%;
   float: left;
   background-color: #3f403d;
   position: fixed;
@@ -57,11 +58,64 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  z-index: 1;
+}
+
+.navigationHide {
+  height: 100vh;
+  width: 16.66%;
+  float: left;
+  background-color: #3f403d;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+}
+
+.navToggle {
+  display: none;
+}
+
+.nextBtn {
+  display: none;
 }
 
 @media only screen and (max-width: 600px) {
-  .navigation {
-    display: none;
+  .navigationDisplay {
+    width: 70%;
+    opacity: 0.9;
+  }
+
+  .navToggle {
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    border: none;
+    background: none;
+    z-index: 99;
+    top: 10px;
+    left: 8px;
+  }
+
+  .toggleIcon {
+    width: 35px;
+    height: 35px;
+    color: white;
+  }
+
+  .nextBtn {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+    bottom: 10px;
+    width: 60px;
+    height: 40px;
+    background: none;
+    border: none;
   }
 }
 
@@ -150,60 +204,73 @@ body {
   height: 100vh;
   margin-left: 16.66%;
   width: 83.33%;
-  background-image: url("../assets/bg1.jpg");
-  background-color: black;
+  background-image: url("../assets/bg2.jpg");
   color: white;
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.9;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
 }
 
 .landingMain2 {
   height: 100vh;
   margin-left: 16.66%;
   width: 83.33%;
-  /* background-image: url("../assets/bg1.jpg"); */
+  background-image: url("../assets/bg1.jpg");
+  color: white;
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.9;
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-
-@media only screen and (max-width: 600px) {
-  .landingMain1,
-  .landingMain2 {
-    width: 100%;
-    margin-left: 0;
-  }
+  justify-content: start;
 }
 
 .introContainer {
   /* color: white; */
   margin: 0;
+  width: 80%;
   display: flex;
+  margin-left: 70px;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
+  text-shadow: 5px 5px 10px black;
 }
 
 .introContainer span {
   font-size: 4rem;
   font-family: "Montserrat", sans-serif;
   position: relative;
+  margin-left: 20px;
   animation-name: intro;
   animation-duration: 1s;
 }
 
 @keyframes intro {
   0% {
-    left: -300px;
+    left: 300px;
   }
   100% {
     left: 0px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .landingMain1,
+  .landingMain2 {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .introContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    margin: auto;
   }
 }

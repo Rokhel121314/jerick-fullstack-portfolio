@@ -1,10 +1,8 @@
-import bg1 from "../assets/bg1.jpg";
-import bg2 from "../assets/bg2.jpeg";
 import React, { useEffect, useState } from "react";
 
 function LandingPage() {
   const [bg, setBg] = useState(1);
-  console.log("background", bg);
+  // console.log("background", bg);
 
   const background = () => {
     if (bg === 1) {
@@ -22,10 +20,16 @@ function LandingPage() {
 
   return (
     <main className={bg === 1 ? "landingMain1" : "landingMain2"}>
-      <div className="introContainer">
+      {/* <div className="introContainer">
         <span>{bg === 1 ? "Hi" : "Civil Engineer/"}</span>
         <span>{bg === 1 ? "I'm Jerick" : "Full Stack Web Developer"}</span>
         <button>download CV</button>
+      </div> */}
+
+      <div className="introContainer">
+        <span>Hi!</span>
+        <span>I'm Jerick</span>
+        <span>{bg === 1 ? "Fullstack Web Developer" : " Civil Engineer"}</span>
       </div>
     </main>
   );
