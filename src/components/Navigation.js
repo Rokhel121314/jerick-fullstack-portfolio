@@ -8,8 +8,8 @@ import { TbPlayerTrackNext } from "react-icons/tb";
 
 function Navigation() {
   const [toggle, setToggle] = useState(false);
-  const [width, setWidth] = useState(0);
-  // console.log("toggle", toggle);
+  const [width, setWidth] = useState(700);
+  console.log("toggle", toggle);
   // console.log("widht", width);
 
   function screenWidth() {
@@ -17,19 +17,19 @@ function Navigation() {
   }
 
   function displayNav() {
-    if (toggle === false) {
-      setToggle(true);
-    } else {
+    if (toggle === true) {
       setToggle(false);
+    } else {
+      setToggle(true);
     }
   }
 
   useEffect(() => {
     window.addEventListener("resize", screenWidth);
-    if (width > 600) {
-      setToggle(false);
-    } else {
+    if (width < 600) {
       setToggle(true);
+    } else {
+      setToggle(false);
     }
     return () => {
       window.removeEventListener("resize", screenWidth);
