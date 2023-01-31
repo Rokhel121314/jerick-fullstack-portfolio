@@ -82,43 +82,6 @@ body {
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
-  .navigationDisplay {
-    width: 70%;
-    opacity: 0.9;
-  }
-
-  .navToggle {
-    display: block;
-    position: absolute;
-    width: 50px;
-    height: 30px;
-    border: none;
-    background: none;
-    z-index: 99;
-    top: 10px;
-    left: 8px;
-  }
-
-  .toggleIcon {
-    width: 35px;
-    height: 35px;
-    color: white;
-  }
-
-  .nextBtn {
-    display: block;
-    position: absolute;
-    z-index: 1;
-    right: 10px;
-    bottom: 10px;
-    width: 60px;
-    height: 40px;
-    background: none;
-    border: none;
-  }
-}
-
 .profilePicture {
   max-width: 200px;
   min-width: 100px;
@@ -198,6 +161,45 @@ body {
   margin-left: 16.66%;
 }
 
+/* MEDIA QUERY FOR NAVIGATION */
+
+@media only screen and (max-width: 600px) {
+  .navigationDisplay {
+    width: 70%;
+    opacity: 0.9;
+  }
+
+  .navToggle {
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    border: none;
+    background: none;
+    z-index: 99;
+    top: 10px;
+    left: 8px;
+  }
+
+  .toggleIcon {
+    width: 35px;
+    height: 35px;
+    color: white;
+  }
+
+  .nextBtn {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    right: 10px;
+    bottom: 10px;
+    width: 60px;
+    height: 40px;
+    background: none;
+    border: none;
+  }
+}
+
 /* LANDING PAGE */
 
 .landingMain1 {
@@ -251,7 +253,7 @@ body {
 
 @keyframes intro {
   0% {
-    left: 300px;
+    left: 100px;
   }
   100% {
     left: 0px;
@@ -272,5 +274,169 @@ body {
     align-items: start;
     text-align: start;
     margin: auto;
+  }
+}
+
+/* ABOUT PAGE */
+
+.aboutMain {
+  height: 100vh;
+  width: 83.33%;
+  margin-left: 16.66%;
+  background-color: #000000;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.aboutHeader {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  font-size: 3rem;
+  /* background-color: gray; */
+}
+
+.aboutSection {
+  width: 100%;
+  height: 70vh;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  /* margin-top: 10vh; */
+}
+
+.aboutContent {
+  margin-top: 20px;
+  width: 80%;
+  font-size: 1.3rem;
+}
+
+.teckstacksIcon {
+  position: relative;
+  top: 2px;
+}
+
+.htmlIcon {
+  color: #fc7249;
+}
+
+.cssIcon {
+  color: #4282ff;
+}
+.jsIcon {
+  color: #feec70;
+}
+
+.mysqlIcon {
+  color: #5490c4;
+}
+
+.dbIcon {
+  color: #116149;
+}
+
+.expIcon {
+  color: #7e7e7e;
+}
+
+.reactIcon {
+  color: #23ecfd;
+}
+
+.nodeIcon {
+  color: #63a85a;
+}
+
+/* ANIMATION FOR ABOUT PAGE */
+
+.animateContent1 {
+  position: relative;
+  animation-name: content1;
+  animation-duration: 0.3s;
+}
+
+.animateContent2 {
+  position: relative;
+  animation-name: content2;
+  animation-duration: 0.6s;
+}
+
+.animateContent3 {
+  position: relative;
+  animation-name: content3;
+  animation-duration: 0.9s;
+}
+
+@keyframes content1 {
+  0% {
+    left: -100px;
+  }
+  25% {
+  }
+  50% {
+  }
+  75% {
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+@keyframes content2 {
+  0% {
+    right: -100px;
+  }
+  25% {
+    right: -100px;
+  }
+  50% {
+  }
+  75% {
+  }
+  100% {
+    right: 0px;
+  }
+}
+
+@keyframes content3 {
+  0% {
+    left: -100px;
+  }
+  25% {
+    left: -100px;
+  }
+  50% {
+    left: -100px;
+  }
+  75% {
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+/* MEDIA QUERY FOR ABOUT PAGE */
+@media only screen and (max-width: 600px) {
+  .aboutMain {
+    width: 100%;
+    margin-left: 0;
+    background-color: #3f403d;
+    text-align: justify;
+  }
+
+  .aboutHeader {
+    height: 16vh;
+  }
+  .aboutSection {
+    margin-top: 0;
+  }
+
+  .aboutContent {
+    height: 84vh;
+    font-size: 1.2rem;
   }
 }
