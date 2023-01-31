@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { TbPlayerTrackNext } from "react-icons/tb";
 
 function LandingPage() {
   const [bg, setBg] = useState(1);
@@ -31,6 +33,9 @@ function LandingPage() {
         <span>I'm Jerick</span>
         <span>{bg === 1 ? "Fullstack Web Developer" : " Civil Engineer"}</span>
       </div>
+      <Link to={"/about"} className="nextBtn">
+        <TbPlayerTrackNext className="toggleIcon" />
+      </Link>
     </main>
   );
 }

@@ -4,11 +4,10 @@ import profilepicture from "../assets/profilejpeg.jpg";
 import { Link } from "react-router-dom";
 import { CgMenu } from "react-icons/cg";
 import { CgClose } from "react-icons/cg";
-import { TbPlayerTrackNext } from "react-icons/tb";
 
 function Navigation() {
   const [toggle, setToggle] = useState(false);
-  const [width, setWidth] = useState(700);
+  const [width, setWidth] = useState(window.innerWidth);
   console.log("toggle", toggle);
   // console.log("widht", width);
 
@@ -26,10 +25,10 @@ function Navigation() {
 
   useEffect(() => {
     window.addEventListener("resize", screenWidth);
-    if (width < 600) {
-      setToggle(true);
-    } else {
+    if (width > 600) {
       setToggle(false);
+    } else {
+      setToggle(true);
     }
     return () => {
       window.removeEventListener("resize", screenWidth);
@@ -77,10 +76,6 @@ function Navigation() {
           </p>
         </footer>
       </nav>
-
-      <Link to={"/about"} className="nextBtn">
-        <TbPlayerTrackNext className="toggleIcon" />
-      </Link>
     </>
   );
 }
