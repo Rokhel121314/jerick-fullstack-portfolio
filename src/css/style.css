@@ -59,6 +59,12 @@ body {
   justify-content: space-between;
 }
 
+@media only screen and (max-width: 600px) {
+  .navigation {
+    display: none;
+  }
+}
+
 .profilePicture {
   max-width: 200px;
   min-width: 100px;
@@ -166,6 +172,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .landingMain1,
+  .landingMain2 {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 .introContainer {
