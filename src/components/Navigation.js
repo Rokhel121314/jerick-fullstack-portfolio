@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import style from "../css/style.css";
-import profilepicture from "../assets/profilejpeg.jpg";
+import profilepicture from "../assets/images/profilejpeg.jpg";
 import { Link } from "react-router-dom";
 import { CgMenu } from "react-icons/cg";
 import { CgClose } from "react-icons/cg";
@@ -8,7 +8,7 @@ import { CgClose } from "react-icons/cg";
 function Navigation() {
   const [toggle, setToggle] = useState(false);
   const [width, setWidth] = useState(window.innerWidth);
-  console.log("toggle", toggle);
+  // console.log("toggle", toggle);
   // console.log("widht", width);
 
   function screenWidth() {

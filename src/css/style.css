@@ -53,7 +53,7 @@ body {
   width: 16.66%;
   float: left;
   background-color: #3f403d;
-  position: fixed;
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -121,6 +121,7 @@ body {
   text-decoration: none;
   color: white;
   margin-bottom: 20px;
+  font-size: 1.2rem;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -198,6 +199,14 @@ body {
     background: none;
     border: none;
   }
+  .profilePicture {
+    position: relative;
+    top: 60px;
+  }
+
+  .navItems {
+    font-size: 1.3rem;
+  }
 }
 
 /* LANDING PAGE */
@@ -206,7 +215,7 @@ body {
   height: 100vh;
   margin-left: 16.66%;
   width: 83.33%;
-  background-image: url("../assets/bg2.jpg");
+  background-image: url("../assets/images/bg2.jpg");
   color: white;
   background-repeat: no-repeat;
   background-size: cover;
@@ -220,7 +229,7 @@ body {
   height: 100vh;
   margin-left: 16.66%;
   width: 83.33%;
-  background-image: url("../assets/bg1.jpg");
+  background-image: url("../assets/images/bg1.jpg");
   color: white;
   background-repeat: no-repeat;
   background-size: cover;
@@ -293,9 +302,13 @@ body {
   height: 30vh;
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: center;
   font-size: 3rem;
   /* background-color: gray; */
+}
+.aboutHeaderTitle {
+  width: 80%;
+  text-align: start;
 }
 
 .aboutSection {
@@ -430,6 +443,7 @@ body {
 
   .aboutHeader {
     height: 16vh;
+    align-items: end;
   }
   .aboutSection {
     margin-top: 0;
@@ -438,5 +452,110 @@ body {
   .aboutContent {
     height: 84vh;
     font-size: 1.2rem;
+  }
+
+  .aboutHeaderTitle {
+    text-align: center;
+  }
+}
+
+/* PROJECTS  */
+
+.projectsMain {
+  height: 100vh;
+  width: 83.33%;
+  margin-left: 16.66%;
+  background-color: #000000;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.projectsHeader {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  font-size: 3rem;
+  /* background-color: gray; */
+}
+.projectsHeaderTitle {
+  width: 84%;
+  text-align: start;
+}
+
+.projectsSection {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 2%;
+  column-gap: 3%;
+  overflow-y: auto;
+}
+
+.projectsCard {
+  height: 235px;
+  width: 40%;
+  margin-bottom: 10px;
+  /* background-color: #23ecfd; */
+  color: white;
+  border-radius: 10px;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.projectImage1 {
+  /* margin-top: 10px; */
+  width: 100%;
+  height: 235px;
+}
+
+.projectTitle {
+  width: 90%;
+  position: relative;
+  bottom: 50px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  text-shadow: 5px 5px 10px black;
+}
+
+.projectsDetail {
+  font-size: 0.5rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* MEDIA QUERY FOR PROJECTS PAGE */
+@media only screen and (max-width: 600px) {
+  .projectsMain {
+    width: 100%;
+    height: max-content;
+    margin-left: 0;
+  }
+  .projectsHeader {
+    height: 16vh;
+    align-items: end;
+  }
+
+  .projectsHeaderTitle {
+    text-align: center;
+  }
+
+  .projectsSection {
+    height: auto;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    /* overflow-y: auto; */
+  }
+
+  .projectsCard {
+    width: 90%;
+    margin: 10px;
   }
 }

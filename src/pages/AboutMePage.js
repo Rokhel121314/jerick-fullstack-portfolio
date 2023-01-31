@@ -9,12 +9,14 @@ import {
   SiReact,
   SiNodedotjs,
 } from "react-icons/si";
+import { Link } from "react-router-dom";
+import { TbPlayerTrackNext } from "react-icons/tb";
 
 function AboutMePage() {
   return (
     <main className="aboutMain">
       <header className="aboutHeader">
-        <span>ABOUT ME?</span>
+        <span className="aboutHeaderTitle">ABOUT ME?</span>
       </header>
       <section className="aboutSection">
         <span className="aboutContent animateContent1">
@@ -40,9 +42,12 @@ function AboutMePage() {
         <span className="aboutContent animateContent3">
           Having a background on construction and engineering my transferable
           skills are problem-solving, critical thinking, resourcefullness, team
-          player and goal oriented to finish a project.
+          player and goal oriented.
         </span>
       </section>
+      <Link to={"/projects"} className="nextBtn">
+        <TbPlayerTrackNext className="toggleIcon" />
+      </Link>
     </main>
   );
 }
