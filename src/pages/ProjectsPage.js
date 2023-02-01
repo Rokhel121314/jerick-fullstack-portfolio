@@ -7,35 +7,86 @@ function ProjectsPage() {
         <span className="projectsHeaderTitle">PROJECTS</span>
       </header>
       <section className="projectsSection">
+        {/* PROJECT CARD 1*/}
         <div className="projectsCard">
-          <div className="projectsImageContainer">
-            <img
-              src={require("../assets/projects/lakoGIF1.gif")}
-              alt="projectimages"
-              className="projectImage1"
-            />
-          </div>
+          <span className="projectTitle">LAKO PH</span>
+
+          <img
+            src={require("../assets/projects/lakoGIF1.gif")}
+            alt="projectimages"
+            className="projectImage1"
+          />
+
           <div className="projectTitle">
-            <div>
-              <span>LAKO PH</span>
-              <br />
+            <div className="bottomBorder">
               <span className="projectsDetail">
-                PROVIDES STOCKS, POS, TRANSACTION AND SALES SUMMARY FOR STORES
-              </span>
-              <br />
-            </div>
-            <div>
-              <span>
-                <a href="http://lakoph.online/">Go to website</a>
+                PROVIDES STOCKS, POS, TRANSACTION AND SALES SUMMARY FOR SMALL
+                BUSINESS SUCH AS STORES, BAKERIES AND MANY MORE
               </span>
             </div>
           </div>
         </div>
-        <div className="projectsCard">1</div>
-        <div className="projectsCard">1</div>
-        <div className="projectsCard">1</div>
-        {/* <div className="projectsCard">1</div>
-        <div className="projectsCard">1</div> */}
+        {/* END OF PROJECT CARD */}
+        {/* PROJECT CARD 2*/}
+        <div className="projectsCard">
+          <span className="projectTitle">STICK WARS</span>
+
+          <img
+            src={require("../assets/projects/stickwarsGIF.gif")}
+            alt="projectimages"
+            className="projectImage1"
+          />
+
+          <div className="projectTitle">
+            <div className="bottomBorder">
+              <span className="projectsDetail">
+                A SIMPLE FIGHTING GAME WITH PLAYER VS PLAYER AND PLAYER VS BOT,
+                MADE WITH JAVASCRIPT.
+              </span>
+            </div>
+          </div>
+        </div>
+        {/* END OF PROJECT CARD */}
+        {/* PROJECT CARD 3*/}
+        <div className="projectsCard">
+          <span className="projectTitle">TEMPERATURE CONVERTER</span>
+
+          <img
+            src={require("../assets/projects/tempconvertGIF.gif")}
+            alt="projectimages"
+            className="projectImage1"
+          />
+
+          <div className="projectTitle">
+            <div className="bottomBorder">
+              <span className="projectsDetail">
+                SIMPLE COMPLETE TEMPERATURE CONVERTER CAN BE USED FOR
+                ENGINEERING SUBJECTS
+              </span>
+            </div>
+          </div>
+        </div>
+        {/* END OF PROJECT CARD */}
+        {/* PROJECT CARD 4*/}
+        <div className="projectsCard">
+          <span className="projectTitle">UNDER DEVELOPMENT</span>
+
+          <img
+            src={require("../assets/projects/underdevelopment.png")}
+            alt="projectimages"
+            className="projectImage1"
+          />
+
+          <div className="projectTitle">
+            <div className="bottomBorder">
+              <span className="projectsDetail">
+                UNDER DEVELOPMENT PLEASE WAIT FOR FUTURE UPDATES. {<br />} UNDER
+                DEVELOPMENT PLEASE WAIT FOR FUTURE UPDATES.
+              </span>
+            </div>
+          </div>
+        </div>
+        {/* END OF PROJECT CARD */}
       </section>
     </main>
   );

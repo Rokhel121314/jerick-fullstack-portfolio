@@ -5,10 +5,12 @@ import ProjectsPage from "./pages/ProjectsPage";
 import SkillsPage from "./pages/SkillsPage";
 import ContactsPage from "./pages/ContactsPage";
 import { Route, Routes } from "react-router-dom";
+import Navigation from "./components/Navigation";
 
 function App() {
   return (
     <>
+      <Navigation />
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/about" element={<AboutMePage />} />
@@ -16,6 +18,12 @@ function App() {
         <Route path="/skills" element={<SkillsPage />} />
         <Route path="/contacts" element={<ContactsPage />} />
       </Routes>
+
+      {/* <LandingPage />
+      <AboutMePage />
+      <ProjectsPage />
+      <SkillsPage />
+      <ContactsPage /> */}
     </>
   );
 }
