@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import style from "../css/style.css";
 import profilepicture from "../assets/images/profilejpeg.jpg";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { CgMenu } from "react-icons/cg";
 import { CgClose } from "react-icons/cg";
+import { Link } from "react-scroll";
 
 function Navigation() {
   const [toggle, setToggle] = useState(false);
@@ -58,12 +59,34 @@ function Navigation() {
           <p className="tName">FULL STACK WEB DEVELOPER</p>
         </div>
 
-        <div className="navItems">
+        {/* <div className="navItems">
           <Link to={"/"}>HOME</Link>
           <Link to={"/about"}>ABOUT</Link>
           <Link to={"/projects"}>PROJECTS</Link>
-          <Link to={"/skills"}>SKILLS</Link>
+          <Link to={"/skills"}>TECK STACKS</Link>
           <Link to={"/contacts"}>CONTACTS</Link>
+        </div> */}
+        <div className="navItems">
+          <Link activeClass="active" to="home" smooth={true} duration={500}>
+            HOME
+          </Link>
+          <Link activeClass="active" to="about" smooth={true} duration={500}>
+            ABOUT
+          </Link>
+          <Link activeClass="active" to="projects" smooth={true} duration={500}>
+            PROJECTS
+          </Link>
+          <Link
+            activeClass="active"
+            to="techstacks"
+            smooth={true}
+            duration={500}
+          >
+            TECH STACKS
+          </Link>
+          <Link activeClass="active" to="contacts" smooth={true} duration={500}>
+            CONTACTS
+          </Link>
         </div>
 
         <footer className="navFooter">

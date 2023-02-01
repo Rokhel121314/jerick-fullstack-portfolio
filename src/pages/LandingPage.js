@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import { TbPlayerTrackNext } from "react-icons/tb";
 
 function LandingPage() {
@@ -21,7 +21,7 @@ function LandingPage() {
   }, [bg]);
 
   return (
-    <main className={bg === 1 ? "landingMain1" : "landingMain2"}>
+    <main className={bg === 1 ? "landingMain1" : "landingMain2"} id="home">
       {/* <div className="introContainer">
         <span>{bg === 1 ? "Hi" : "Civil Engineer/"}</span>
         <span>{bg === 1 ? "I'm Jerick" : "Full Stack Web Developer"}</span>
@@ -33,7 +33,13 @@ function LandingPage() {
         <span>I'm Jerick</span>
         <span>{bg === 1 ? "Fullstack Web Developer" : " Civil Engineer"}</span>
       </div>
-      <Link to={"/about"} className="nextBtn">
+      <Link
+        activeClass="active"
+        to="about"
+        smooth={true}
+        duration={500}
+        className="nextBtn"
+      >
         <TbPlayerTrackNext className="toggleIcon" />
       </Link>
     </main>

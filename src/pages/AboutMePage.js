@@ -9,12 +9,12 @@ import {
   SiReact,
   SiNodedotjs,
 } from "react-icons/si";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import { TbPlayerTrackNext } from "react-icons/tb";
 
 function AboutMePage() {
   return (
-    <main className="aboutMain">
+    <main className="aboutMain" id="about">
       <header className="aboutHeader">
         <span className="aboutHeaderTitle">ABOUT ME?</span>
       </header>
@@ -45,7 +45,13 @@ function AboutMePage() {
           player and goal oriented.
         </span>
       </section>
-      <Link to={"/projects"} className="nextBtn">
+      <Link
+        activeClass="active"
+        to="projects"
+        smooth={true}
+        duration={500}
+        className="nextBtn1"
+      >
         <TbPlayerTrackNext className="toggleIcon" />
       </Link>
     </main>

@@ -2,9 +2,9 @@ import React from "react";
 
 function SkillsPage() {
   return (
-    <div className="container">
+    <main className="container" id="techstacks">
       <span>SKILLS</span>
-    </div>
+    </main>
   );
 }
 

@@ -2,7 +2,7 @@ import React from "react";
 
 function ProjectsPage() {
   return (
-    <main className="projectsMain">
+    <main className="projectsMain" id="projects">
       <header className="projectsHeader">
         <span className="projectsHeaderTitle">PROJECTS</span>
       </header>
@@ -12,6 +12,7 @@ function ProjectsPage() {
           <a
             href="https://lakoph.online/"
             target="_blank"
+            rel="noreferrer"
             className="projectTitle"
           >
             <span>LAKO PH</span>
@@ -35,6 +36,7 @@ function ProjectsPage() {
           <a
             href="https://rokhel121314.github.io/stickWars_v.1.0/"
             target="_blank"
+            rel="noreferrer"
             className="projectTitle"
           >
             <span>STICK WARS</span>
@@ -60,6 +62,7 @@ function ProjectsPage() {
           <a
             href="https://rokhel121314.github.io/TemperatureConverterv.3.0/"
             target="_blank"
+            rel="noreferrer"
             className="projectTitle"
           >
             <span>TEMPERATURE CONVERTER</span>

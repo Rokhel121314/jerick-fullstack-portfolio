@@ -2,9 +2,9 @@ import React from "react";
 
 function ContactsPage() {
   return (
-    <div className="container">
+    <main className="container" id="contacts">
       <span>Contacts</span>
-    </div>
+    </main>
   );
 }
 
