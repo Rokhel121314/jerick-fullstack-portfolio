@@ -9,7 +9,11 @@ function ProjectsPage() {
       <section className="projectsSection">
         {/* PROJECT CARD 1*/}
         <div className="projectsCard">
-          <a href="https://lakoph.online/" className="projectTitle">
+          <a
+            href="https://lakoph.online/"
+            target="_blank"
+            className="projectTitle"
+          >
             <span>LAKO PH</span>
           </a>
 
@@ -30,6 +34,7 @@ function ProjectsPage() {
         <div className="projectsCard">
           <a
             href="https://rokhel121314.github.io/stickWars_v.1.0/"
+            target="_blank"
             className="projectTitle"
           >
             <span>STICK WARS</span>
@@ -54,6 +59,7 @@ function ProjectsPage() {
         <div className="projectsCard">
           <a
             href="https://rokhel121314.github.io/TemperatureConverterv.3.0/"
+            target="_blank"
             className="projectTitle"
           >
             <span>TEMPERATURE CONVERTER</span>
