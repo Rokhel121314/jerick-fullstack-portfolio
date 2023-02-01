@@ -22,12 +22,6 @@ function LandingPage() {
 
   return (
     <main className={bg === 1 ? "landingMain1" : "landingMain2"} id="home">
-      {/* <div className="introContainer">
-        <span>{bg === 1 ? "Hi" : "Civil Engineer/"}</span>
-        <span>{bg === 1 ? "I'm Jerick" : "Full Stack Web Developer"}</span>
-        <button>download CV</button>
-      </div> */}
-
       <div className="introContainer">
         <span>Hi!</span>
         <span>I'm Jerick</span>

@@ -79,7 +79,8 @@ body {
 }
 
 .nextBtn,
-.nextBtn1 {
+.nextBtn1,
+.nextBtn2 {
   display: none;
 }
 
@@ -128,6 +129,7 @@ body {
 
 .navItems a:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .navFooter {
@@ -212,6 +214,23 @@ body {
     height: 40px;
     background: none;
     border: none;
+  }
+
+  .nextBtn2 {
+    display: block;
+    float: right;
+    /* position: relative; */
+    z-index: 1;
+    right: 10px;
+    width: 60px;
+    height: 40px;
+    background: none;
+    border: none;
+    /* color: #23ecfd; */
+  }
+
+  .nextBtnContainer {
+    height: 5vh;
   }
   .profilePicture {
     position: relative;
@@ -451,7 +470,7 @@ body {
   .aboutMain {
     width: 100%;
     margin-left: 0;
-    background-color: #3f403d;
+    /* background-color: #3f403d; */
     text-align: justify;
   }
 
@@ -578,5 +597,100 @@ body {
   .bottomBorder {
     border-bottom: 1px solid white;
     padding-bottom: 10px;
+  }
+}
+
+/* TECH STACKS PAGE */
+
+/* ABOUT PAGE */
+
+.techstacksMain {
+  height: 100vh;
+  width: 83.33%;
+  margin-left: 16.66%;
+  background-color: #000000;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.techstacksHeader {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  font-size: 3rem;
+  /* background-color: gray; */
+}
+.techstacksHeaderTitle {
+  width: 80%;
+  text-align: start;
+}
+
+.techstacksSection {
+  width: 100%;
+  height: 80vh;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* margin-top: 10vh; */
+}
+
+.programmingLanguages {
+  height: 18vh;
+  background-color: white;
+  width: 80%;
+}
+
+.frontendFrameworks {
+  height: 18vh;
+  background-color: rgb(132, 90, 90);
+  width: 80%;
+}
+
+.backendFrameworks {
+  height: 18vh;
+  background-color: white;
+  width: 80%;
+}
+
+.dataBases {
+  height: 18vh;
+  background-color: rgb(138, 75, 75);
+  width: 80%;
+}
+
+/* MEDIA QUERY FOR TECH STACKS PAGE */
+@media only screen and (max-width: 600px) {
+  .techstacksMain {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .techstacksHeader {
+    height: 16vh;
+  }
+
+  .techstacksHeaderTitle {
+    font-size: 2.7rem;
+    text-align: center;
+  }
+
+  .programmingLanguages {
+    width: 90%;
+  }
+
+  .frontendFrameworks {
+    width: 90%;
+  }
+
+  .backendFrameworks {
+    width: 90%;
+  }
+
+  .dataBases {
+    width: 90%;
   }
 }

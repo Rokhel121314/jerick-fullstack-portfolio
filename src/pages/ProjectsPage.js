@@ -1,4 +1,8 @@
 import React from "react";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import "animate.css/animate.min.css";
+import { Link } from "react-scroll";
+import { TbPlayerTrackNext } from "react-icons/tb";
 
 function ProjectsPage() {
   return (
@@ -104,6 +108,17 @@ function ProjectsPage() {
         </div>
         {/* END OF PROJECT CARD */}
       </section>
+      <div className="nextBtnContainer">
+        <Link
+          activeClass="active"
+          to="techstacks"
+          smooth={true}
+          duration={500}
+          className="nextBtn2"
+        >
+          <TbPlayerTrackNext className="toggleIcon" />
+        </Link>
+      </div>
     </main>
   );
 }
