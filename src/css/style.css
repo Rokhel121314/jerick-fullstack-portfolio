@@ -260,14 +260,14 @@ body {
   animation-duration: 1s;
 }
 
-@keyframes intro {
+/* @keyframes intro {
   0% {
     left: 100px;
   }
   100% {
     left: 0px;
   }
-}
+} */
 
 @media only screen and (max-width: 600px) {
   .landingMain1,
@@ -384,7 +384,7 @@ body {
   animation-duration: 0.9s;
 }
 
-@keyframes content1 {
+/* @keyframes content1 {
   0% {
     left: -100px;
   }
@@ -430,7 +430,7 @@ body {
   100% {
     left: 0px;
   }
-}
+} */
 
 /* MEDIA QUERY FOR ABOUT PAGE */
 @media only screen and (max-width: 600px) {
@@ -518,8 +518,9 @@ body {
 
 .projectTitle {
   width: 100%;
-  /* margin-bottom: 15px; */
-  /* color: black; */
+  text-decoration: underline;
+  padding: 5px;
+  color: white;
   display: flex;
   justify-content: space-between;
   text-shadow: 5px 5px 10px black;
