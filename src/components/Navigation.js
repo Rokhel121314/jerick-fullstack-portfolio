@@ -59,13 +59,6 @@ function Navigation() {
           <p className="tName">FULL STACK WEB DEVELOPER</p>
         </div>
 
-        {/* <div className="navItems">
-          <Link to={"/"}>HOME</Link>
-          <Link to={"/about"}>ABOUT</Link>
-          <Link to={"/projects"}>PROJECTS</Link>
-          <Link to={"/skills"}>TECK STACKS</Link>
-          <Link to={"/contacts"}>CONTACTS</Link>
-        </div> */}
         <div className="navItems">
           <Link activeClass="active" to="home" smooth={true} duration={500}>
             HOME
