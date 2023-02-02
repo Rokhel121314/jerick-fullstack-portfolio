@@ -80,7 +80,9 @@ body {
 
 .nextBtn,
 .nextBtn1,
-.nextBtn2 {
+.nextBtn2,
+.nextBtn3,
+.nextBtn4 {
   display: none;
 }
 
@@ -227,13 +229,37 @@ body {
     float: right;
     /* position: relative; */
     z-index: 1;
-    right: 10px;
+    right: 15px;
+    bottom: 10px;
     width: 60px;
     height: 40px;
     background: none;
     border: none;
     cursor: pointer;
     /* color: #23ecfd; */
+  }
+
+  .nextBtn3 {
+    display: block;
+    position: relative;
+    float: right;
+    bottom: 10px;
+    right: 30px;
+  }
+
+  .nextBtn4 {
+    display: block;
+    position: relative;
+    float: right;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .toggleIcon4 {
+    width: 35px;
+    height: 35px;
+    color: white;
+    cursor: pointer;
   }
 
   .nextBtnContainer {
@@ -613,8 +639,6 @@ body {
 
 /* TECH STACKS PAGE */
 
-/* ABOUT PAGE */
-
 .techstacksMain {
   height: 100vh;
   width: 83.33%;
@@ -738,5 +762,232 @@ body {
   .techstacksContainer {
     display: flex;
     justify-content: space-evenly;
+  }
+}
+
+/* CONTACTS PAGE */
+
+.contactsMain {
+  height: 100vh;
+  width: 83.33%;
+  margin-left: 16.66%;
+  background-color: #000000;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contactsHeader {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  font-size: 3rem;
+  /* background-color: gray; */
+}
+.contactsHeaderTitle {
+  width: 80%;
+  text-align: start;
+}
+
+.contactsSection {
+  width: 100%;
+  height: 80vh;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.contactDetails {
+  width: 40%;
+  height: 80vh;
+  /* background-color: gray; */
+}
+
+.contactForms {
+  width: 40%;
+  height: 80vh;
+  color: white;
+}
+
+.inputHeaderContainer {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.inputHeader {
+  color: white;
+  font-size: 1.7rem;
+  width: 80%;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+}
+
+.formInput {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.inputBox {
+  height: 40px;
+  width: 80%;
+  font-size: 1.2rem;
+  font-weight: 800;
+  border: none;
+  background-color: black;
+  color: white;
+  outline: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  font-family: "Open Sans", sans-serif;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px rgb(0, 0, 0) inset !important;
+}
+input:-webkit-autofill {
+  -webkit-text-fill-color: rgb(255, 255, 255) !important;
+}
+
+.commentBox {
+  height: 100px;
+  width: 80%;
+  border-radius: 7px;
+  outline: none;
+  background-color: black;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
+
+.submitBtn {
+  width: 80%;
+  height: 40px;
+  border-radius: 7px;
+  border: 1px solid white;
+  background-color: black;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+.submitBtn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border-color: black;
+}
+
+.submitBtn:active {
+  background-color: black;
+  color: white;
+  border-color: white;
+  transition-duration: 0.1s;
+}
+
+.contactInfoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+  height: 70vh;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: row;
+}
+
+.contactInfoIcon {
+  font-size: 1.4rem;
+  margin-right: 10px;
+}
+.contactInfoText {
+  margin: 0;
+}
+
+.contactInfoText a {
+  text-decoration: none;
+  color: white;
+}
+
+.contactHeaderContainer {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: end;
+}
+.contactHeader {
+  color: white;
+  font-size: 1.7rem;
+  width: 100%;
+  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* MEDIA QUERY FOR CONTACTS PAGE */
+@media only screen and (max-width: 600px) {
+  .contactsMain {
+    /* min-height: auto; */
+    height: auto;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .contactsHeader {
+    height: 16vh;
+    display: flex;
+  }
+
+  .contactsHeaderTitle {
+    font-size: 2.7rem;
+    text-align: center;
+  }
+
+  .contactsSection {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contactDetails {
+    width: 90%;
+    height: auto;
+    /* background-color: gray; */
+  }
+
+  .contactForms {
+    width: 90%;
+    height: 80vh;
+    color: white;
+  }
+
+  .contactHeaderContainer {
+    justify-content: center;
+  }
+
+  .contactHeader {
+    text-align: center;
+  }
+
+  .inputHeader {
+    text-align: center;
+  }
+
+  .contactInfoContainer {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contactInfo {
+    margin-top: 10px;
   }
 }

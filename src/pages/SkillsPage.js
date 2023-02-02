@@ -10,6 +10,8 @@ import {
   SiCss3,
   SiBootstrap,
 } from "react-icons/si";
+import { Link } from "react-scroll";
+import { TbPlayerTrackNext } from "react-icons/tb";
 
 function SkillsPage() {
   return (
@@ -52,6 +54,16 @@ function SkillsPage() {
           </div>
         </article>
       </section>
+
+      <Link
+        activeClass="active"
+        to="contacts"
+        smooth={true}
+        duration={500}
+        className="nextBtn3"
+      >
+        <TbPlayerTrackNext className="toggleIcon" />
+      </Link>
     </main>
   );
 }
