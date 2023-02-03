@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import style from "../css/style.css";
 import profilepicture from "../assets/images/profilejpeg.jpg";
-// import { Link } from "react-router-dom";
 import { CgMenu } from "react-icons/cg";
 import { CgClose } from "react-icons/cg";
 import { Link } from "react-scroll";
+import { useNavigate } from "react-router-dom";
 
 function Navigation() {
   const [toggle, setToggle] = useState(false);
@@ -36,6 +36,12 @@ function Navigation() {
     };
   }, [width]);
 
+  const navigate = useNavigate();
+
+  function adminPage() {
+    navigate("admin");
+  }
+
   return (
     <>
       <button className="navToggle" onClick={displayNav}>
@@ -45,6 +51,7 @@ function Navigation() {
           <CgClose className="toggleIcon" />
         )}
       </button>
+      {/* <button onClick={adminPage}>SECRETE</button> */}
       <nav className={toggle ? "navigationHide" : "navigationDisplay"}>
         <div className="profileContainer">
           <img
@@ -83,7 +90,9 @@ function Navigation() {
         </div>
 
         <footer className="navFooter">
-          <p className="copyRight">© Copyright 2023 All rights reserved.</p>
+          <p className="copyRight" onClick={adminPage}>
+            © Copyright 2023 All rights reserved.
+          </p>
           <p className="createdWith">
             Created with:{" "}
             <a className="reactLink" href="https://reactjs.org/">
