@@ -53,17 +53,20 @@ function Navigation() {
       </button>
       {/* <button onClick={adminPage}>SECRETE</button> */}
       <nav className={toggle ? "navigationHide" : "navigationDisplay"}>
-        <div className="profileContainer">
-          <img
-            src={profilepicture}
-            alt="profilepicture"
-            className="profilePicture"
-          />
-        </div>
+        <div className="top-filler"></div>
+        <div className="profileDetailContainer">
+          <div className="profileContainer">
+            <img
+              src={profilepicture}
+              alt="profilepicture"
+              className="profilePicture"
+            />
+          </div>
 
-        <div className="nameContainer">
-          <p className="pName">JERICK D. DELA CRUZ</p>
-          <p className="tName">FULL STACK WEB DEVELOPER</p>
+          <div className="nameContainer">
+            <p className="pName">JERICK D. DELA CRUZ</p>
+            <p className="tName">FULL STACK WEB DEVELOPER</p>
+          </div>
         </div>
 
         <div className="navItems">

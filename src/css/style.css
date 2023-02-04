@@ -47,6 +47,15 @@ body {
   margin: 0;
 }
 
+.container1 {
+  background-image: url("../assets/images/loader.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  height: 100vh;
+  width: 100%;
+}
+
 /* NAVIGATION  */
 .navigationDisplay {
   height: 100vh;
@@ -86,12 +95,19 @@ body {
   display: none;
 }
 
-.profilePicture {
+.profileDetailContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.profileContainer .profilePicture {
   max-width: 200px;
   min-width: 100px;
   width: 100%;
   height: auto;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   border-radius: 50%;
   border: 2px solid rgb(255, 255, 255);
 }
@@ -126,6 +142,7 @@ body {
   color: white;
   margin-bottom: 20px;
   font-size: 1.2rem;
+  text-align: center;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -169,13 +186,14 @@ body {
 
 /* MEDIA QUERY FOR NAVIGATION */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .navigationDisplay {
-    width: 70%;
-    opacity: 0.9;
+    width: 60%;
+    opacity: 1;
     float: right;
     position: fixed;
     right: 0;
+    z-index: 2;
   }
 
   .navToggle {
@@ -202,7 +220,7 @@ body {
     position: absolute;
     z-index: 1;
     right: 10px;
-    bottom: 10px;
+    bottom: 1rem;
     width: 60px;
     height: 40px;
     background: none;
@@ -216,7 +234,7 @@ body {
     position: relative;
     z-index: 1;
     right: 10px;
-    bottom: -70px;
+    bottom: -3rem;
     width: 60px;
     height: 40px;
     background: none;
@@ -243,7 +261,7 @@ body {
     display: block;
     position: relative;
     float: right;
-    bottom: 10px;
+    bottom: 2rem;
     right: 30px;
   }
 
@@ -267,7 +285,7 @@ body {
   }
   .profilePicture {
     position: relative;
-    top: 60px;
+    /* top: 60px; */
   }
 
   .navItems {
@@ -335,7 +353,7 @@ body {
   }
 } */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .landingMain1,
   .landingMain2 {
     width: 100%;
@@ -355,7 +373,7 @@ body {
 /* ABOUT PAGE */
 
 .aboutMain {
-  height: 100vh;
+  min-height: 100vh;
   width: 83.33%;
   margin-left: 16.66%;
   background-color: #000000;
@@ -503,8 +521,9 @@ body {
 } */
 
 /* MEDIA QUERY FOR ABOUT PAGE */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .aboutMain {
+    min-height: 100vh;
     width: 100%;
     margin-left: 0;
     /* background-color: #3f403d; */
@@ -521,7 +540,7 @@ body {
 
   .aboutContent {
     height: 84vh;
-    font-size: 1.2rem;
+    font-size: 1.1em;
   }
 
   .aboutHeaderTitle {
@@ -602,7 +621,7 @@ body {
 }
 
 /* MEDIA QUERY FOR PROJECTS PAGE */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .projectsMain {
     width: 100%;
     height: max-content;
@@ -720,7 +739,7 @@ body {
 }
 
 /* MEDIA QUERY FOR TECH STACKS PAGE */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .techstacksMain {
     width: 100%;
     margin-left: 0;
@@ -932,7 +951,7 @@ input:-webkit-autofill {
 }
 
 /* MEDIA QUERY FOR CONTACTS PAGE */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .contactsMain {
     /* min-height: auto; */
     height: auto;
