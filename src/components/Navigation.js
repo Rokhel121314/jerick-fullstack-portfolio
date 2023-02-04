@@ -7,7 +7,7 @@ import { Link } from "react-scroll";
 import { useNavigate } from "react-router-dom";
 
 function Navigation() {
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
   const [width, setWidth] = useState(window.innerWidth);
   // console.log("toggle", toggle);
   // console.log("widht", width);
@@ -26,7 +26,7 @@ function Navigation() {
 
   useEffect(() => {
     window.addEventListener("resize", screenWidth);
-    if (width > 600) {
+    if (width > 768) {
       setToggle(false);
     } else {
       setToggle(true);
