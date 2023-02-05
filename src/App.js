@@ -1,5 +1,4 @@
 import style from "./css/style.css";
-import LandingPage from "./pages/LandingPage";
 import AboutMePage from "./pages/AboutMePage";
 import ProjectsPage from "./pages/ProjectsPage";
 import SkillsPage from "./pages/SkillsPage";
@@ -15,7 +14,6 @@ function App() {
     <>
       <Navigation />
       <LandingPage2 />
-      {/* <LandingPage /> */}
       <AboutMePage />
       <ProjectsPage />
       <SkillsPage />
