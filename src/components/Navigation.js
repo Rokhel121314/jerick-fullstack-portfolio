@@ -16,6 +16,12 @@ function Navigation() {
     setWidth(window.innerWidth);
   }
 
+  function closeNavOnClick() {
+    if (width < 768) {
+      setToggle(true);
+    }
+  }
+
   function displayNav() {
     if (toggle === true) {
       setToggle(false);
@@ -70,13 +76,31 @@ function Navigation() {
         </div>
 
         <div className="navItems">
-          <Link activeClass="active" to="home" smooth={true} duration={500}>
+          <Link
+            activeClass="active"
+            to="home"
+            smooth={true}
+            duration={500}
+            onClick={closeNavOnClick}
+          >
             HOME
           </Link>
-          <Link activeClass="active" to="about" smooth={true} duration={500}>
+          <Link
+            activeClass="active"
+            to="about"
+            smooth={true}
+            duration={500}
+            onClick={closeNavOnClick}
+          >
             ABOUT
           </Link>
-          <Link activeClass="active" to="projects" smooth={true} duration={500}>
+          <Link
+            activeClass="active"
+            to="projects"
+            smooth={true}
+            duration={500}
+            onClick={closeNavOnClick}
+          >
             PROJECTS
           </Link>
           <Link
@@ -84,10 +108,17 @@ function Navigation() {
             to="techstacks"
             smooth={true}
             duration={500}
+            onClick={closeNavOnClick}
           >
             TECH STACKS
           </Link>
-          <Link activeClass="active" to="contacts" smooth={true} duration={500}>
+          <Link
+            activeClass="active"
+            to="contacts"
+            smooth={true}
+            duration={500}
+            onClick={closeNavOnClick}
+          >
             CONTACTS
           </Link>
         </div>
