@@ -5,29 +5,6 @@ import { AiFillFacebook, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 
 function LandingPage2() {
-  const [bg, setBg] = useState(1);
-  // console.log("background", bg);
-
-  const navigateTo = useNavigate();
-
-  function navigateToProjects() {
-    <Link to="projects" />;
-  }
-
-  const background = () => {
-    if (bg === 1) {
-      setBg(2);
-    } else {
-      setBg(1);
-    }
-  };
-
-  useEffect(() => {
-    setTimeout(() => {
-      background();
-    }, 7000);
-  }, [bg]);
-
   return (
     <main className="landing2Main" id="home">
       <section className="landingSection">
@@ -52,11 +29,11 @@ function LandingPage2() {
           <div className="btnContainer">
             <Link
               activeClass="active"
-              to="projects"
+              to="contacts"
               smooth={true}
               duration={500}
             >
-              <button className="projectBtn mleft">PROJECTS</button>
+              <button className="projectBtn mleft">CONTACT ME !</button>
             </Link>
           </div>
         </div>
