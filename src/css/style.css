@@ -1087,3 +1087,80 @@ input:-webkit-autofill {
     margin-top: 10px;
   }
 }
+
+/* ADMIN PAGE */
+
+.adminMain {
+  height: 80vh;
+  width: 50%;
+  border: 1px solid white;
+  color: white;
+  margin: calc((100vh - 80vh) / 2) auto;
+  border-radius: 5px;
+  display: flex;
+  /* background-color: white; */
+}
+
+.adminNav {
+  height: 80vh;
+  width: 30%;
+  border-right: 1px solid white;
+}
+
+.adminNavItems ul {
+  padding-left: 0.5rem;
+}
+.adminNavItems ul li {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.messageHeader {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.displayMessagesMain {
+  height: 80vh;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  /* background-color: #23ecfd; */
+}
+
+.messageBox {
+  width: 99%;
+  margin-top: 0.2rem;
+  padding: 1rem 0;
+  border: 1px solid white;
+  font-weight: lighter;
+  font-family: "Montserrat", sans-serif;
+}
+
+.senderName {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.senderMessage {
+  font-size: 1rem;
+  margin-left: 1rem;
+  text-overflow: clip;
+}
+
+/* MEDIA QUERY FOR ADMIN */
+@media only screen and (max-width: 768px) {
+  .adminMain {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .displayMessagesMain {
+    height: 100vh;
+  }
+}

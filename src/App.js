@@ -4,7 +4,6 @@ import ProjectsPage from "./pages/ProjectsPage";
 import SkillsPage from "./pages/SkillsPage";
 import ContactsPage from "./pages/ContactsPage";
 import Navigation from "./components/Navigation";
-import Admin from "./pages/Admin";
 import LandingPage2 from "./pages/LandingPage2";
 
 export const URL = process.env.REACT_APP_SERVER_URL;
