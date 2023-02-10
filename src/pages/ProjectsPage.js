@@ -35,6 +35,33 @@ function ProjectsPage() {
           </div>
         </div>
         {/* END OF PROJECT CARD */}
+
+        {/* PROJECT CARD 4*/}
+        <div className="projectsCard">
+          <a
+            href="https://pokemon-teambuilder.onrender.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="projectTitle"
+          >
+            <span>POKEMON TEAM BUILDER</span>
+          </a>
+
+          <img
+            src={require("../assets/projects/pokemon.gif")}
+            alt="projectimages"
+            className="projectImage1"
+          />
+
+          <div className="bottomBorder">
+            <span className="projectsDetail">
+              MADE WITH POKEMON API, CAN VIEW , SEARCH, ADD TO FAVORITE, AND
+              CREATE TEAM
+            </span>
+          </div>
+        </div>
+        {/* END OF PROJECT CARD */}
+
         {/* PROJECT CARD 2*/}
         <div className="projectsCard">
           <a
@@ -86,26 +113,6 @@ function ProjectsPage() {
           </div>
         </div>
 
-        {/* END OF PROJECT CARD */}
-        {/* PROJECT CARD 4*/}
-        <div className="projectsCard">
-          <span className="projectTitle">UNDER DEVELOPMENT</span>
-
-          <img
-            src={require("../assets/projects/underdevelopment.png")}
-            alt="projectimages"
-            className="projectImage1"
-          />
-
-          <div className="projectTitle">
-            <div className="bottomBorder">
-              <span className="projectsDetail">
-                UNDER DEVELOPMENT PLEASE WAIT FOR FUTURE UPDATES. {<br />} UNDER
-                DEVELOPMENT PLEASE WAIT FOR FUTURE UPDATES.
-              </span>
-            </div>
-          </div>
-        </div>
         {/* END OF PROJECT CARD */}
       </section>
       <div className="nextBtnContainer">
