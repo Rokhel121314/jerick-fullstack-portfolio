@@ -19,7 +19,7 @@ function ProjectsPage() {
             rel="noreferrer"
             className="projectTitle"
             disabled={true}>
-            <span>LAKO PH</span>
+            <span>LAKO PH (UNDER REVISION FOR IMPROVEMENT)</span>
           </a>
 
           <img
@@ -29,8 +29,7 @@ function ProjectsPage() {
           />
           <div className="bottomBorder">
             <span className="projectsDetail">
-              PROVIDES STOCKS, POS, TRANSACTION AND SALES SUMMARY FOR SMALL
-              BUSINESS SUCH AS STORES, BAKERIES AND MANY MORE
+              LAKO APP UNDER REVISION PLEASE WAIT FOR LAKO v.3.0
             </span>
           </div>
         </div>
