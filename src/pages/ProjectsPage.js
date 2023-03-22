@@ -18,7 +18,7 @@ function ProjectsPage() {
             target="_blank"
             rel="noreferrer"
             className="projectTitle"
-          >
+            disabled={true}>
             <span>LAKO PH</span>
           </a>
 
@@ -42,8 +42,7 @@ function ProjectsPage() {
             href="https://pokemon-teambuilder.onrender.com/"
             target="_blank"
             rel="noreferrer"
-            className="projectTitle"
-          >
+            className="projectTitle">
             <span>POKEMON TEAM BUILDER</span>
           </a>
 
@@ -68,8 +67,7 @@ function ProjectsPage() {
             href="https://rokhel121314.github.io/stickWars_v.1.0/"
             target="_blank"
             rel="noreferrer"
-            className="projectTitle"
-          >
+            className="projectTitle">
             <span>STICK WARS</span>
           </a>
 
@@ -94,8 +92,7 @@ function ProjectsPage() {
             href="https://rokhel121314.github.io/TemperatureConverterv.3.0/"
             target="_blank"
             rel="noreferrer"
-            className="projectTitle"
-          >
+            className="projectTitle">
             <span>TEMPERATURE CONVERTER</span>
           </a>
 
@@ -121,8 +118,7 @@ function ProjectsPage() {
           to="techstacks"
           smooth={true}
           duration={500}
-          className="nextBtn2"
-        >
+          className="nextBtn2">
           <TbPlayerTrackNext className="toggleIcon" />
         </Link>
       </div>
