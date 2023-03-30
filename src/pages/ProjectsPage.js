@@ -14,12 +14,12 @@ function ProjectsPage() {
         {/* PROJECT CARD 1*/}
         <div className="projectsCard">
           <a
-            href="https://lakoph.online/"
+            href="https://lakov3.onrender.com"
             target="_blank"
             rel="noreferrer"
             className="projectTitle"
             disabled={true}>
-            <span>LAKO PH (UNDER REVISION FOR IMPROVEMENT)</span>
+            <span>LAKO v3</span>
           </a>
 
           <img
@@ -29,7 +29,10 @@ function ProjectsPage() {
           />
           <div className="bottomBorder">
             <span className="projectsDetail">
-              LAKO APP UNDER REVISION PLEASE WAIT FOR LAKO v.3.0
+              MADE WITH MERN STACK, REDUX & REDUX TOOLKIT FOR STATE MANAGEMENT,
+              CHART JS FOR GRAPHS, REACT ROUTER DOM V.6 FOR ROUTING, JWT TOKEN
+              FOR AUTHENTICATION, CLOUDINARY FOR IMAGE STORAGE FROM UPLOADED
+              PHOTOS and OTHER NODE PACKAGES.
             </span>
           </div>
         </div>
